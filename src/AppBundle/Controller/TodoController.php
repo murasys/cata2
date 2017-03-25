@@ -29,10 +29,21 @@ class TodoController extends Controller
     }
 
     /**
+     * @Route("/test", name="test")
+     */
+    public function testAction(){
+        $categories = $this->getDoctrine()->getManager()->getRepository("AppBundle:Categories")
+                    ->findAllOrderedByName();
+
+        return $this->render('todo/test.html.twig', array('categories' => $categories));
+    }
+
+    /**
      * @Route("/todo/create", name="todo_create")
      */
     public function createAction(Request $request)
     {
+
         $todo = new Todo;
         $form = $this->createFormBuilder($todo)
                 ->add('name', TextType::class, array('attr' => array('class' => 'form-control', 'style' => 'margin-bottom:15px')))
@@ -83,7 +94,7 @@ class TodoController extends Controller
     {
         if(is_null($id)) {
             $this->addFlash('notice',
-                'Incorrect request'
+                'Incorrect request 111'
             );
             return $this->redirectToRoute("todo_list");
         }

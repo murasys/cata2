@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * categories
+ * Categories
  *
  * @ORM\Table(name="categories")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\categoriesRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CategoriesRepository")
  */
-class categories
+class Categories
 {
     /**
      * @var int
@@ -44,7 +44,7 @@ class categories
      *
      * @param string $name
      *
-     * @return categories
+     * @return Categories
      */
     public function setName($name)
     {

@@ -31,7 +31,7 @@ class Todo
     /**
      * @var string
      *
-     * @ORM\Column(name="category", type="string", length=255)
+     * @ORM\Column(name="category", type="integer", length=11)
      */
     private $category;
 
