@@ -43,4 +43,11 @@ class RegistrationController extends Controller {
             array('form' => $form->createView())
         );
     }
+
+    /**
+     * @Route("register2", name="user_reg2"
+     */
+    public function register2Action() {
+        $cata1 = 1;
+    }
 }
