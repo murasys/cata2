@@ -31,6 +31,7 @@ class RegistrationController extends Controller {
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
             $this->addFlash('notice', 'Your account has been created');
+			$yy=2;
             return $this->redirectToRoute('user_registration');
 
         }
