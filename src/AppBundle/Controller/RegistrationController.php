@@ -48,6 +48,6 @@ class RegistrationController extends Controller {
      * @Route("register2", name="user_reg2"
      */
     public function register2Action() {
-        $cata1 = 1;
+        $cata1 = 2;
     }
 }
