@@ -33,6 +33,7 @@ class RegistrationController extends Controller {
             $this->addFlash('notice', 'Your account has been created');
 			$yy=2;
 			$zz=3;
+			$a = 1;
             return $this->redirectToRoute('user_registration');
 
         }
