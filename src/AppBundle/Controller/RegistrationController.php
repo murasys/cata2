@@ -33,7 +33,9 @@ class RegistrationController extends Controller {
             $this->addFlash('notice', 'Your account has been created');
 			$yy=2;
 			$zz=3;
+
 			$a = 1;
+>>>>>>> baec44329aafcd5ea90efb3783ffba7bde8f000c
             return $this->redirectToRoute('user_registration');
 
         }
@@ -48,6 +50,7 @@ class RegistrationController extends Controller {
      * @Route("register2", name="user_reg2"
      */
     public function register2Action() {
-        $cata1 = 2;
+        $cata1 = 111;
+		$cata2 = 2;
     }
 }
