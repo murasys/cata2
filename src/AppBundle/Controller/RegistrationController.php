@@ -51,5 +51,6 @@ class RegistrationController extends Controller {
      */
     public function register2Action() {
         $cata1 = 1;
+		$cata2 = 2;
     }
 }
