@@ -33,7 +33,9 @@ class RegistrationController extends Controller {
             $this->addFlash('notice', 'Your account has been created');
 			$yy=2;
 			$zz=3;
-			$b=2;
+
+			$a = 1;
+>>>>>>> baec44329aafcd5ea90efb3783ffba7bde8f000c
             return $this->redirectToRoute('user_registration');
 
         }
@@ -42,5 +44,12 @@ class RegistrationController extends Controller {
             'registration/register.html.twig',
             array('form' => $form->createView())
         );
+    }
+
+    /**
+     * @Route("register2", name="user_reg2"
+     */
+    public function register2Action() {
+        $cata1 = 1;
     }
 }
